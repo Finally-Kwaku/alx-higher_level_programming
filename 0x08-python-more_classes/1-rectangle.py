@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-
 """A class that defines a rectangle"""
 
+
 class Rectangle:
-    """
-    Rectangle object with getter and setters
-    """
-    def __init__(self, width=0, height=0):
-        self.height = height
-        self.width = width
+   """ Definition of a class rectangle"""
+
+   def __init__(self, width=0, height=0):
+       self.height = height
+       self.width = width
 
     @property
     def width(self):
