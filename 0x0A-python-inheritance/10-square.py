@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Creates a class"""
+"""Creates a square class"""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """A class rectangle that inherits from BaseGeometry"""
+    """A class square that inherits from Rectangle"""
 
     def __init__(self, size):
         """Launch new square"""
