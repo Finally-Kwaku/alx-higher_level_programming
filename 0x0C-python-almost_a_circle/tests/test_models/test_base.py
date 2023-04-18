@@ -60,42 +60,42 @@ class TestBase(unittest.TestCase):
         with self.assertRaises(TypeError) as x:
             Base.to_json_string(9)
         self.assertEqual(
-            "list_dictionaries must be a list of dictionaries", str(
+            "list_dictionaries is a list of dictionaries", str(
                 x.exception))
         with self.assertRaises(TypeError) as x:
             Base.to_json_string("Hello")
         self.assertEqual(
-            "list_dictionaries must be a list of dictionaries", str(
+            "list_dictionaries is a list of dictionaries", str(
                 x.exception))
         with self.assertRaises(TypeError) as x:
             Base.to_json_string(["Hi", "Here"])
         self.assertEqual(
-            "list_dictionaries must be a list of dictionaries", str(
+            "list_dictionaries is a list of dictionaries", str(
                 x.exception))
         with self.assertRaises(TypeError) as x:
             Base.to_json_string(7.8)
         self.assertEqual(
-            "list_dictionaries must be a list of dictionaries", str(
+            "list_dictionaries is a list of dictionaries", str(
                 x.exception))
         with self.assertRaises(TypeError) as x:
             Base.to_json_string([2, 1, 3, 4])
         self.assertEqual(
-            "list_dictionaries must be a list of dictionaries", str(
+            "list_dictionaries is a list of dictionaries", str(
                 x.exception))
         with self.assertRaises(TypeError) as x:
             Base.to_json_string({1: 'hi', 2: 'there'})
         self.assertEqual(
-            "list_dictionaries must be a list of dictionaries", str(
+            "list_dictionaries is a list of dictionaries", str(
                 x.exception))
         with self.assertRaises(TypeError) as x:
             Base.to_json_string((9, 0))
         self.assertEqual(
-            "list_dictionaries must be a list of dictionaries", str(
+            "list_dictionaries is a list of dictionaries", str(
                 x.exception))
         with self.assertRaises(TypeError) as x:
             Base.to_json_string(True)
         self.assertEqual(
-            "list_dictionaries must be a list of dictionaries", str(
+            "list_dictionaries is a list of dictionaries", str(
                 x.exception))
 
     def test_15_2(self):
