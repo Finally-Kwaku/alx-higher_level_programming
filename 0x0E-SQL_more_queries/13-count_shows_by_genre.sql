@@ -1,6 +1,6 @@
 -- Script that lists all genres from hbtn_0d_tvshows and displays the number of shows linked to each
 -- Does not display genres without linked shows
--- Results are sorted by descending number of shows linked
+-- Results are sorted in descending order by the number of shows linked
 SELECT g.`name` AS `genre`,
        COUNT(*) AS `number_of_shows`
   FROM `tv_genres` AS g
